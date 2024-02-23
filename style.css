@@ -1,0 +1,10 @@
+body {
+    width: 90vw;
+    margin: auto;
+    font-size: 20px;
+}
+
+section {
+    background-color: lightgrey;
+    padding: 40px;
+}
