@@ -47,22 +47,36 @@ section#idioma {
 .titulo-secao{
     font-family: "Dancing Script", cursive;
     color: dimgray;
-    font-size: 2rem;
-    margin: 1rem; /* valores: top (cima) right (direita) bottom (baixa) left (esquerda) / Quando a definição for igual para todos basta digitar apenas uma vez */
-    padding: 1rem; /*valores top (cima) right (direita) botton (baixa) left (esquerda) / Preenchimento */
+    font-size: 3rem;
+    margin: 0.5rem; /* valores: top (cima) right (direita) bottom (baixa) left (esquerda) / Quando a definição for igual para todos basta digitar apenas uma vez */
+    padding: 0.5rem; /*valores top (cima) right (direita) botton (baixa) left (esquerda) / Preenchimento */
 
 }
 
-img {
-    font-size: medium;
+.foto1 {
+    margin: 0rem 51rem;
+    width: 209px;
+}
+
+.icone_casa {
+    width: 50px;
+    margin: 0rem 0rem -0.5rem 0rem;
 }
 
 .nome_curriculo {
     font-family: "Anta", sans-serif;
     font-size: 3rem;
-    margin: 2rem 1rem 3rem 4rem; /* Shorthand */
+    margin: 2rem 1rem -4rem 1rem; /* Shorthand */
 }
 
 p {
     line-height: 1.5; /*altura da linha: 1.5x o tamanho padrão */
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: capitalize;
 }
