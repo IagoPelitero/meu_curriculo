@@ -4,12 +4,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
+:root {
+    font-size: 16px; /* tamanho base do rem -> 1 rem = 16 px */
+    /* aqui altera-se todos os tamanhos baseados no rem ao mesmo tempo */
+}
+/* : -> pseudo classe */
 body {
-    width: 90vw;
-    margin: auto;
-    font-size: 20px;
-    font-family: "Shantell Sans", cursive;;
+    width: 80vw; /*80vw: 80% da viewport width */
+    margin: auto; /*margem com ajuste automático */
+    font-size: 20px; /* o padrão é 16px */
+    font-family: "Shantell Sans", cursive;
 }
 
 section {
@@ -43,6 +47,10 @@ section#idioma {
 .titulo-secao{
     font-family: "Dancing Script", cursive;
     color: dimgray;
+    font-size: 2rem;
+    margin: 1rem; /* valores: top (cima) right (direita) bottom (baixa) left (esquerda) / Quando a definição for igual para todos basta digitar apenas uma vez */
+    padding: 1rem; /*valores top (cima) right (direita) botton (baixa) left (esquerda) / Preenchimento */
+
 }
 
 img {
@@ -55,3 +63,6 @@ img {
     margin: 2rem 1rem 3rem 4rem; /* Shorthand */
 }
 
+p {
+    line-height: 1.5; /*altura da linha: 1.5x o tamanho padrão */
+}
