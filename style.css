@@ -4,9 +4,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
 :root {
     font-size: 16px; /* tamanho base do rem -> 1 rem = 16 px */
     /* aqui altera-se todos os tamanhos baseados no rem ao mesmo tempo */
+    scroll-behavior: smooth ;
 }
 /* : -> pseudo classe */
 body {
