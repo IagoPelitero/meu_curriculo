@@ -51,6 +51,31 @@ section#idioma {
     background-color: lightseagreen;
 }
 
+section#tecnologias {
+    display: flex;
+    justify-content:space-around;
+}
+
+/*combinadores*/
+
+article h1 { /*h1 descendente a article*/
+    font-size: 2rem;
+    font-weight: bold; /*bold = 700*/ 
+}
+
+article h2 { /*h2 descendente a article*/
+    font-size: 1.5rem;
+    font-weight: 600;/*demi-bold (quase negrito)*/
+}
+
+article p {
+    text-align: justify;
+}
+
+article {
+    width: 30%;
+}
+
 .titulo-secao{
     font-family: "Dancing Script", cursive;
     color: dimgray;
