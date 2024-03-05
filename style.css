@@ -28,52 +28,101 @@ section {
 }
 
 section#apresentacao {
-    background-color: lightcoral;
+    background-color: #f08080;
 }
 
 section#formacao {
-    background-color: lightgreen;
+    background-color: #90ee90;
 }
 
 section#experiencia_profissional {
-    background-color: bisque;
+    background-color: #ffe4c4;
 }
 
+/*@TODO
+1. Estilizar as demais seções
+2. Estilizar elementos RTICLE
+3. Tirar sombras de texto
+*/
+
 section#hard_skills {
-    background-color: lemonchiffon;
+    background-color: #fffacc;
 }
 
 section#soft_skills {
-    background-color: lightsalmon;
+    background-color: #ffa07a;
 }
 
-section#idioma {
-    background-color: lightseagreen;
+section#idiomas {
+    background-color: #20b2aa;
 }
 
 section#tecnologias {
-    display: flex;
-    justify-content:space-around;
+    background-color: #ffd700;
+    display: flex; /*exibe como caixa de (flexbox)*/
+    /* Flexbox tem várias propriedades que trabalham juntos */
+    justify-content:space-between; /*alinha o conteúdo no eixo principal*/
 }
 
 /*combinadores*/
 
 article h1 { /*h1 descendente a article*/
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 0;
+    line-height: 1.5;
     font-weight: bold; /*bold = 700*/ 
+    margin: 0 0 1rem 0;
 }
 
 article h2 { /*h2 descendente a article*/
-    font-size: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
     font-weight: 600;/*demi-bold (quase negrito)*/
+    margin: 0 0 1rem 0;
 }
 
 article p {
     text-align: justify;
+    margin: 1rem 0 2rem 0;
+    padding: 0;
+    line-height: 1.5;
+    text-transform: capitalize;    
+    
+}
+
+.autor {
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 80%;
+}
+
+.data {
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 80%;
+}
+
+.continue_lendo a {
+color: #ffffff;
+text-decoration: none;
+}
+
+.continue_lendo {
+    background-color: #483d8b;
+    padding: 0rem 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+article p {
+    text-align: justify;
+    margin-bottom: 1rem;
 }
 
 article {
     width: 30%;
+    background-color: #cecece;
+    padding: 2rem;
 }
 
 .titulo-secao{
@@ -111,4 +160,6 @@ h3 {
     font-size: 1.5rem;
     font-weight: 300;
     text-transform: capitalize;
+    margin: 1rem 0 2rem 0;
+    padding: 0;
 }
