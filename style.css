@@ -81,15 +81,6 @@ article h2 { /*h2 descendente a article*/
     margin: 0 0 1rem 0;
 }
 
-article p {
-    text-align: justify;
-    margin: 1rem 0 2rem 0;
-    padding: 0;
-    line-height: 1.5;
-    text-transform: capitalize;    
-    
-}
-
 .autor {
     font-style: oblique;
     font-weight: 600;
@@ -115,8 +106,10 @@ text-decoration: none;
 }
 
 article p {
-    text-align: justify;
+    text-align: left;
     margin-bottom: 1rem;
+    font-size: large;
+    
 }
 
 article {
@@ -162,4 +155,12 @@ h3 {
     text-transform: capitalize;
     margin: 1rem 0 2rem 0;
     padding: 0;
+}
+
+.lista_tags li {
+    display: inline-block;
+    background-color: #cecece;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px;
 }
