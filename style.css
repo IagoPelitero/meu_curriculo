@@ -10,58 +10,46 @@
     border: none;
     box-sizing: border-box;
 }
+
 :root {
     font-size: 16px; /* tamanho base do rem -> 1 rem = 16 px */
     /* aqui altera-se todos os tamanhos baseados no rem ao mesmo tempo */
     scroll-behavior: smooth ;
+    --cor-primaria-texto: #353535;
+    --cor-fundo-tags: #bebebe;
+    --padding-padrao-secao: 40px;
+
+    /* Tema: light */
+    --plano-fundo: #ffffff;
+    --cor-primaria-texto: #353535;
+    --cor-fundo-tags: #bebebe;
+
 }
+
+[data-tema= "dark"] {
+    --plano-fundo: #353535;
+    --cor-primaria-texto: #ffffff;
+    --cor-fundo-tags: #353535;
+    --cor-fundo-apresentacao: ;
+}
+
 /* : -> pseudo classe */
 body {
     width: 80vw; /*80vw: 80% da viewport width */
     margin: auto; /*margem com ajuste automático */
     font-size: 20px; /* o padrão é 16px */
     font-family: "Shantell Sans", cursive;
+    background-color: var(--plano-fundo);
 }
 
-section {
-    padding: 40px;
-}
-
-section#apresentacao {
-    background-color: #f08080;
-}
-
-section#formacao {
-    background-color: #90ee90;
-}
-
-section#experiencia_profissional {
-    background-color: #ffe4c4;
-}
-
-/*@TODO
-1. Estilizar as demais seções
-2. Estilizar elementos RTICLE
-3. Tirar sombras de texto
-*/
-
-section#hard_skills {
-    background-color: #fffacc;
-}
-
-section#soft_skills {
-    background-color: #ffa07a;
-}
-
-section#idiomas {
-    background-color: #20b2aa;
+header {
+    background-color: #fffacd;
 }
 
 section#tecnologias {
-    background-color: #ffd700;
     display: flex; /*exibe como caixa de (flexbox)*/
     /* Flexbox tem várias propriedades que trabalham juntos */
-    justify-content:space-between; /*alinha o conteúdo no eixo principal*/
+    justify-content: space-around; /*alinha o conteúdo no eixo principal*/
 }
 
 /*combinadores*/
@@ -109,6 +97,8 @@ article p {
     text-align: left;
     margin-bottom: 1rem;
     font-size: large;
+    height: 150px;
+    overflow: hidden;
     
 }
 
@@ -120,7 +110,6 @@ article {
 
 .titulo-secao{
     font-family: "Dancing Script", cursive;
-    color: dimgray;
     font-size: 3rem;
     margin: 0.5rem; /* valores: top (cima) right (direita) bottom (baixa) left (esquerda) / Quando a definição for igual para todos basta digitar apenas uma vez */
     padding: 0.5rem; /*valores top (cima) right (direita) botton (baixa) left (esquerda) / Preenchimento */
@@ -128,8 +117,7 @@ article {
 }
 
 .foto1 {
-    margin: 0rem 51rem;
-    width: 209px;
+    margin: 5rem 51rem 0rem 51.5rem;
 }
 
 .icone_casa {
@@ -140,7 +128,7 @@ article {
 .nome_curriculo {
     font-family: "Anta", sans-serif;
     font-size: 3rem;
-    margin: 2rem 1rem -4rem 1rem; /* Shorthand */
+    margin: 0rem 15rem -8rem 5rem; /* Shorthand */
 }
 
 p {
@@ -163,4 +151,17 @@ h3 {
     padding: 5px;
     border-radius: 4px;
     margin: 5px;
+}
+
+#apresentacao #formacao #experiencia_profissional #hard_skills #soft_skills #idiomas {
+    padding: var(--padding-padrao-secao);
+}
+
+section {
+    background-color: #fffacd;
+}
+
+#imagem_mensagem {
+    width: 50px;
+    margin: 0rem 0.5rem -0.5rem 0rem;
 }
